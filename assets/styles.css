@@ -378,51 +378,123 @@ button {
 .hero-signal {
   position: absolute;
   z-index: 1;
-  top: 47%;
-  left: 66%;
-  width: clamp(18rem, 32vw, 34rem);
-  aspect-ratio: 1;
+  top: 48%;
+  left: 67%;
+  width: clamp(25rem, 45vw, 48rem);
+  height: clamp(15rem, 30vw, 29rem);
+  overflow: hidden;
   transform: translate(-50%, -50%);
+  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
 }
 
-.signal-orbit,
-.signal-core {
+.hero-wave__bars {
   position: absolute;
-  inset: 50% auto auto 50%;
+  z-index: 2;
+  top: 50%;
+  right: 0;
+  left: 0;
+  display: flex;
+  height: 75%;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.22rem, 0.5vw, 0.52rem);
+  transform: translateY(-50%);
+}
+
+.hero-wave__bars span {
+  width: clamp(1px, 0.16vw, 2px);
+  height: var(--level, 45%);
+  border-radius: 1rem;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(143, 245, 233, 0.8) 18%,
+    var(--paper) 48%,
+    var(--violet) 78%,
+    transparent
+  );
+  box-shadow: 0 0 0.8rem rgba(117, 103, 255, 0.55);
+  transform: scaleY(0.7);
+  animation: hero-wave-pulse 1.8s ease-in-out infinite alternate;
+}
+
+.hero-wave__bars span:nth-child(4n + 1) { --level: 24%; animation-delay: -0.2s; }
+.hero-wave__bars span:nth-child(4n + 2) { --level: 46%; animation-delay: -0.8s; }
+.hero-wave__bars span:nth-child(4n + 3) { --level: 72%; animation-delay: -1.25s; }
+.hero-wave__bars span:nth-child(7n) { --level: 92%; animation-delay: -0.5s; }
+.hero-wave__bars span:nth-child(9n) { --level: 61%; animation-delay: -1.5s; }
+
+.hero-wave__contour {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 85%;
+  height: 43%;
+  border: 1px solid rgba(143, 245, 233, 0.3);
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
 
-.signal-orbit {
-  border: 1px solid rgba(255, 255, 255, 0.25);
+.hero-wave__contour--one {
+  animation: hero-wave-breathe 4s ease-in-out infinite alternate;
 }
 
-.signal-orbit--one {
-  width: 100%;
-  height: 65%;
-  animation: orbit-one 9s linear infinite;
+.hero-wave__contour--two {
+  width: 70%;
+  height: 72%;
+  border-color: rgba(117, 103, 255, 0.28);
+  animation: hero-wave-breathe 5s ease-in-out -2s infinite alternate-reverse;
 }
 
-.signal-orbit--two {
-  width: 60%;
-  height: 100%;
-  animation: orbit-two 7s linear infinite reverse;
+.hero-wave__playhead {
+  position: absolute;
+  z-index: 4;
+  top: 10%;
+  bottom: 10%;
+  left: 15%;
+  width: 1px;
+  background: linear-gradient(transparent, var(--acid), transparent);
+  box-shadow: 0 0 1.2rem var(--acid);
+  animation: hero-wave-scan 6s ease-in-out infinite alternate;
 }
 
-.signal-core {
-  width: 35%;
-  height: 35%;
-  background: radial-gradient(circle at 35% 30%, #fff, var(--cyan) 15%, var(--violet) 48%, transparent 72%);
-  filter: blur(1px);
-  box-shadow: 0 0 5rem rgba(117, 103, 255, 0.75);
+.hero-wave__playhead::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--acid);
+  box-shadow: 0 0 1.5rem var(--acid);
+  transform: translate(-50%, -50%);
 }
 
-@keyframes orbit-one {
-  to { transform: translate(-50%, -50%) rotate(360deg); }
+.hero-wave__glow {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  width: 48%;
+  height: 38%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(143, 245, 233, 0.52), rgba(117, 103, 255, 0.3) 42%, transparent 72%);
+  filter: blur(2rem);
+  transform: translate(-50%, -50%);
 }
 
-@keyframes orbit-two {
-  to { transform: translate(-50%, -50%) rotate(360deg); }
+@keyframes hero-wave-pulse {
+  to { transform: scaleY(1.08); opacity: 0.72; }
+}
+
+@keyframes hero-wave-breathe {
+  to { transform: translate(-50%, -50%) scale(1.08, 0.8); opacity: 0.5; }
+}
+
+@keyframes hero-wave-scan {
+  to { left: 85%; }
 }
 
 .marquee {
