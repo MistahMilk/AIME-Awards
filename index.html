@@ -19,10 +19,9 @@
   <body class="home-page">
     <div class="site-loader" aria-hidden="true">
       <div class="wordmark">
+        <span class="wordmark__the">The</span>
         <span class="wordmark__name"><span>AI</span>MEE</span>
-        <span class="wordmark__award" aria-label="Awards">
-          <span>A</span><span>W</span><span>A</span><span>R</span><span>D</span><span>S</span>
-        </span>
+        <span class="wordmark__award">Awards</span>
       </div>
     </div>
 
@@ -34,21 +33,23 @@
 
     <header class="site-header">
       <a class="wordmark" href="index.html" aria-label="AIMEE Awards home">
+        <span class="wordmark__the">The</span>
         <span class="wordmark__name"><span>AI</span>MEE</span>
-        <span class="wordmark__award" aria-label="Awards">
-          <span>A</span><span>W</span><span>A</span><span>R</span><span>D</span><span>S</span>
-        </span>
+        <span class="wordmark__award">Awards</span>
       </a>
 
       <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="about.html">About</a>
+        <div class="nav-item">
+          <a href="about.html">About</a>
+          <div class="nav-submenu">
+            <a href="about.html#academy">The Academy</a>
+            <a href="about.html#non-profit">Non-Profit</a>
+          </div>
+        </div>
         <a href="awards.html">Categories</a>
         <a href="event.html">Event</a>
-        <a href="winners.html">Past Winners</a>
-        <a href="#timeline">Timeline</a>
+        <a href="winners.html">2025 Winners</a>
       </nav>
-
-      <a class="header-cta" href="#enter">Entry Updates</a>
 
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span>
@@ -57,11 +58,16 @@
     </header>
 
     <div class="mobile-menu" id="mobile-menu">
-      <a href="about.html">About</a>
+      <div class="mobile-menu__group">
+        <a href="about.html">About</a>
+        <div class="mobile-menu__submenu">
+          <a href="about.html#academy">The Academy</a>
+          <a href="about.html#non-profit">Non-Profit</a>
+        </div>
+      </div>
       <a href="awards.html">Categories</a>
       <a href="event.html">Event</a>
-      <a href="winners.html">Past Winners</a>
-      <a href="#timeline">Timeline</a>
+      <a href="winners.html">2025 Winners</a>
       <a href="#enter">Entry Updates</a>
     </div>
 
@@ -192,35 +198,6 @@
         </div>
       </section>
 
-      <section class="timeline section-pad" id="timeline">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Timeline</p>
-          <h2>Road to the inaugural ceremony.</h2>
-        </div>
-        <div class="timeline-list">
-          <article class="timeline-item reveal">
-            <span>Aug 2026</span>
-            <h3>Entries open</h3>
-            <p>Creators submit eligible work to the inaugural AIMEE awards slate.</p>
-          </article>
-          <article class="timeline-item reveal">
-            <span>Nov 2026</span>
-            <h3>Judging begins</h3>
-            <p>Reviewers and advisors evaluate submissions against the Academy's excellence standard.</p>
-          </article>
-          <article class="timeline-item reveal">
-            <span>Jan 2027</span>
-            <h3>Nominees announced</h3>
-            <p>The first AIMEE nominees establish the public benchmark for AI music excellence.</p>
-          </article>
-          <article class="timeline-item reveal">
-            <span>Spring 2027</span>
-            <h3>AIMEE night</h3>
-            <p>The inaugural ceremony presents the leading honors in AI music.</p>
-          </article>
-        </div>
-      </section>
-
       <section class="enter-panel" id="enter">
         <p class="eyebrow reveal">Entry Updates</p>
         <h2 class="reveal">Stay close to the inaugural AIMEE season.</h2>
@@ -233,16 +210,15 @@
 
     <footer class="site-footer">
       <a class="wordmark wordmark--footer" href="index.html" aria-label="AIMEE Awards home">
+        <span class="wordmark__the">The</span>
         <span class="wordmark__name"><span>AI</span>MEE</span>
-        <span class="wordmark__award" aria-label="Awards">
-          <span>A</span><span>W</span><span>A</span><span>R</span><span>D</span><span>S</span>
-        </span>
+        <span class="wordmark__award">Awards</span>
       </a>
       <div class="site-footer__links">
         <a href="about.html">About</a>
         <a href="awards.html">Categories</a>
         <a href="event.html">Event</a>
-        <a href="winners.html">Past Winners</a>
+        <a href="winners.html">2025 Winners</a>
         <a href="#enter">Contact</a>
       </div>
       <div class="site-footer__meta">

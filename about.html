@@ -24,19 +24,22 @@
 
     <header class="site-header">
       <a class="wordmark" href="index.html" aria-label="AIMEE Awards home">
+        <span class="wordmark__the">The</span>
         <span class="wordmark__name"><span>AI</span>MEE</span>
-        <span class="wordmark__award" aria-label="Awards">
-          <span>A</span><span>W</span><span>A</span><span>R</span><span>D</span><span>S</span>
-        </span>
+        <span class="wordmark__award">Awards</span>
       </a>
       <nav class="desktop-nav" aria-label="Main navigation">
-        <a class="is-current" href="about.html">About</a>
+        <div class="nav-item">
+          <a class="is-current" href="about.html">About</a>
+          <div class="nav-submenu">
+            <a href="#academy">The Academy</a>
+            <a href="#non-profit">Non-Profit</a>
+          </div>
+        </div>
         <a href="awards.html">Categories</a>
         <a href="event.html">Event</a>
-        <a href="winners.html">Past Winners</a>
-        <a href="index.html#timeline">Timeline</a>
+        <a href="winners.html">2025 Winners</a>
       </nav>
-      <a class="header-cta" href="index.html#enter">Entry Updates</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span>
         <span class="sr-only">Toggle menu</span>
@@ -44,85 +47,209 @@
     </header>
 
     <div class="mobile-menu" id="mobile-menu">
-      <a href="about.html">About</a>
+      <div class="mobile-menu__group">
+        <a href="about.html">About</a>
+        <div class="mobile-menu__submenu">
+          <a href="#academy">The Academy</a>
+          <a href="#non-profit">Non-Profit</a>
+        </div>
+      </div>
       <a href="awards.html">Categories</a>
       <a href="event.html">Event</a>
-      <a href="winners.html">Past Winners</a>
-      <a href="index.html#timeline">Timeline</a>
+      <a href="winners.html">2025 Winners</a>
       <a href="index.html#enter">Entry Updates</a>
     </div>
 
     <main id="main">
-      <section class="page-hero">
-        <p class="eyebrow reveal">About The Academy of AI Music</p>
-        <h1 class="reveal">Leading recognition for AI music excellence.</h1>
-        <p class="page-hero__intro reveal">
-          AI-generated music is moving from experiment to culture. The Academy of
-          AI Music was created as the first organization dedicated to recognizing
-          excellence in this field, with the AIMEE's serving as the leading honors
-          for artists and creative teams shaping the future of sound.
-        </p>
-      </section>
-
-      <section class="editorial-section section-pad">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Background</p>
-          <h2>An academy built for a new musical era.</h2>
-        </div>
-        <div class="editorial-columns">
-          <p class="reveal">
-            Recording technology changed performance. Synthesizers changed popular
-            music. Sampling changed authorship and production. AI-generated music
-            belongs in that lineage, and the Academy exists to give this new era
-            a serious institution, a clear standard, and a public record.
-          </p>
-          <p class="reveal">
-            As the first organization dedicated to AI music excellence, The Academy of
-            AI Music leads the field by
-            celebrating musical excellence, creative direction, responsible use,
-            and cultural impact before the category is defined by others.
+      <section class="about-hero" id="academy">
+        <div class="about-hero__copy reveal">
+          <p class="eyebrow">The Academy of AI Music</p>
+          <h1>An institution for the future of music.</h1>
+          <p>
+            The Academy brings creators, technologists, industry leaders, and the
+            public together around excellence in AI-generated and AI-assisted music.
           </p>
         </div>
+        <nav class="about-hero__index reveal" aria-label="About page sections">
+          <a href="#academy-overview"><span>01</span>Academy Overview</a>
+          <a href="#academy-work"><span>02</span>Our Work</a>
+          <a href="#leadership"><span>03</span>Leadership</a>
+          <a href="#non-profit"><span>04</span>Non-Profit</a>
+          <a href="#programs"><span>05</span>Programs</a>
+        </nav>
       </section>
 
-      <section class="principles section-pad">
-        <article class="principle-card reveal">
+      <section class="about-intro section-pad" id="academy-overview">
+        <div class="about-section-heading reveal">
           <span>01</span>
-          <h2>First standard</h2>
-          <p>The Academy establishes the first formal recognition standard for AI-generated and AI-assisted music.</p>
-        </article>
-        <article class="principle-card reveal">
-          <span>02</span>
-          <h2>Human intent</h2>
-          <p>The AIMEE's focus on the people behind the music: their taste, prompts, edits, lyrics, production choices, and final decisions.</p>
-        </article>
-        <article class="principle-card reveal">
-          <span>03</span>
-          <h2>Category leader</h2>
-          <p>The Academy creates the public archive for the works and creators that define AI music excellence.</p>
-        </article>
+          <div>
+            <p class="eyebrow">Academy Overview</p>
+            <h2>Defining excellence in an emerging creative field.</h2>
+          </div>
+        </div>
+        <div class="about-intro__body">
+          <p class="about-intro__lead reveal">
+            This section will introduce the Academy, explain why it was founded, and
+            establish its role in the evolving music landscape.
+          </p>
+          <div class="about-copy reveal">
+            <p>
+              Future content can describe the Academy's history, point of view, and
+              long-term vision for creators working with artificial intelligence.
+            </p>
+            <p>
+              This area can also explain the relationship between The Academy of AI
+              Music and The AIMEE Awards.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section class="quote-section">
-        <p class="eyebrow reveal">The next step</p>
-        <blockquote class="reveal">
-          The future of music deserves an institution built to recognize it first.
-        </blockquote>
+      <section class="about-work section-pad" id="academy-work">
+        <div class="about-section-heading reveal">
+          <span>02</span>
+          <div>
+            <p class="eyebrow">Our Work</p>
+            <h2>Four areas of institutional focus.</h2>
+          </div>
+        </div>
+        <div class="about-card-grid">
+          <article class="about-card reveal">
+            <span>Recognition</span>
+            <h3>The AIMEE Awards</h3>
+            <p>Space for the awards mission, judging philosophy, and annual recognition program.</p>
+          </article>
+          <article class="about-card reveal">
+            <span>Standards</span>
+            <h3>Creative Excellence</h3>
+            <p>Space for principles surrounding authorship, craft, transparency, and responsible practice.</p>
+          </article>
+          <article class="about-card reveal">
+            <span>Knowledge</span>
+            <h3>Education &amp; Research</h3>
+            <p>Space for future resources, reports, workshops, and industry learning initiatives.</p>
+          </article>
+          <article class="about-card reveal">
+            <span>Community</span>
+            <h3>Industry Connection</h3>
+            <p>Space for creator programs, partnerships, membership, and community participation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-governance section-pad" id="leadership">
+        <div class="about-section-heading reveal">
+          <span>03</span>
+          <div>
+            <p class="eyebrow">Leadership</p>
+            <h2>A structure designed for credibility.</h2>
+          </div>
+        </div>
+        <div class="governance-grid">
+          <article class="governance-card reveal">
+            <p class="eyebrow">Board of Directors</p>
+            <h3>Governance and stewardship</h3>
+            <p>Reserved for board structure, fiduciary oversight, and future director profiles.</p>
+            <span>Details forthcoming</span>
+          </article>
+          <article class="governance-card reveal">
+            <p class="eyebrow">Advisory Council</p>
+            <h3>Music and technology expertise</h3>
+            <p>Reserved for advisors representing creators, rights, technology, culture, and education.</p>
+            <span>Details forthcoming</span>
+          </article>
+          <article class="governance-card reveal">
+            <p class="eyebrow">Academy Team</p>
+            <h3>Programs and operations</h3>
+            <p>Reserved for executive leadership, program staff, and organizational contacts.</p>
+            <span>Details forthcoming</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="nonprofit-panel" id="non-profit">
+        <div class="nonprofit-panel__heading reveal">
+          <span>04</span>
+          <p class="eyebrow">Non-Profit</p>
+          <h2>Built to serve creators, culture, and the public.</h2>
+        </div>
+        <div class="nonprofit-panel__content">
+          <p class="nonprofit-panel__lead reveal">
+            This section will communicate the organization's public-benefit mission,
+            non-profit model, and commitment to long-term service.
+          </p>
+          <div class="nonprofit-facts reveal">
+            <div>
+              <span>Mission</span>
+              <p>Placeholder for the formal non-profit mission statement.</p>
+            </div>
+            <div>
+              <span>Public Benefit</span>
+              <p>Placeholder for who the organization serves and the outcomes it supports.</p>
+            </div>
+            <div>
+              <span>Accountability</span>
+              <p>Placeholder for governance, reporting, ethics, and transparency information.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-programs section-pad" id="programs">
+        <div class="about-section-heading reveal">
+          <span>05</span>
+          <div>
+            <p class="eyebrow">Programs</p>
+            <h2>A foundation for future initiatives.</h2>
+          </div>
+        </div>
+        <div class="program-list">
+          <article class="program-row reveal">
+            <span>01</span>
+            <h3>Awards &amp; Recognition</h3>
+            <p>Annual AIMEE programs, special honors, and the permanent winners archive.</p>
+          </article>
+          <article class="program-row reveal">
+            <span>02</span>
+            <h3>Creator Education</h3>
+            <p>Future workshops, resources, and learning opportunities for music creators.</p>
+          </article>
+          <article class="program-row reveal">
+            <span>03</span>
+            <h3>Research &amp; Standards</h3>
+            <p>Future reports and practical guidance for a rapidly developing industry.</p>
+          </article>
+          <article class="program-row reveal">
+            <span>04</span>
+            <h3>Community Access</h3>
+            <p>Future initiatives designed to expand access and participation in AI music.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-contact">
+        <div class="about-contact__copy reveal">
+          <p class="eyebrow">Learn More</p>
+          <h2>Help shape the next chapter of music.</h2>
+        </div>
+        <div class="about-contact__links reveal">
+          <a class="button button--light" href="mailto:hello@academyofaimusic.com">Contact The Academy</a>
+          <a class="text-link text-link--light" href="index.html#enter">Receive Updates</a>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <a class="wordmark wordmark--footer" href="index.html" aria-label="AIMEE Awards home">
+        <span class="wordmark__the">The</span>
         <span class="wordmark__name"><span>AI</span>MEE</span>
-        <span class="wordmark__award" aria-label="Awards">
-          <span>A</span><span>W</span><span>A</span><span>R</span><span>D</span><span>S</span>
-        </span>
+        <span class="wordmark__award">Awards</span>
       </a>
       <div class="site-footer__links">
         <a href="about.html">About</a>
         <a href="awards.html">Categories</a>
         <a href="event.html">Event</a>
-        <a href="winners.html">Past Winners</a>
+        <a href="winners.html">2025 Winners</a>
         <a href="index.html#enter">Contact</a>
       </div>
       <div class="site-footer__meta">
