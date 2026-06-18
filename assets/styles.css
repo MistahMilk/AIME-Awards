@@ -127,8 +127,8 @@ button {
   z-index: 40;
   top: 0;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 2rem;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  gap: clamp(0.8rem, 1.7vw, 2rem);
   align-items: center;
   padding: 1rem var(--side);
   background: rgba(5, 5, 5, 0.92);
@@ -330,6 +330,25 @@ button {
   font: 700 0.56rem / 1.25 var(--font-mono);
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.header-cta {
+  justify-self: end;
+  padding: 0.65rem 0.95rem;
+  border: 1px solid rgba(247, 244, 237, 0.36);
+  border-radius: 999px;
+  color: var(--paper);
+  font-size: 0.72rem;
+  font-weight: 800;
+  white-space: nowrap;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.header-cta:hover {
+  background: rgba(201, 154, 66, 0.12);
+  border-color: var(--gold);
+  color: var(--gold-light);
+  transform: translateY(-1px);
 }
 
 .section-pad {
@@ -1512,7 +1531,8 @@ p {
     display: none;
   }
 
-  .academy-brand {
+  .academy-brand,
+  .header-cta {
     display: none;
   }
 
