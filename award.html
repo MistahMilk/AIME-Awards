@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Past winners and honorees recognized by The Academy of AI Music and the AIMEE's."
+      content="An AIMEE Awards category detail page from The Academy of AI Music."
     />
-    <title>Past Winners | The AIMEE's</title>
+    <title>Award Category | The AIMEE's</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +19,7 @@
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
     <div class="top-strip">
-      <a href="event.html">Inaugural AIMEE event details</a>
+      <a href="index.html#enter">Entries open August 2026</a>
     </div>
 
     <header class="site-header">
@@ -31,9 +31,9 @@
       </a>
       <nav class="desktop-nav" aria-label="Main navigation">
         <a href="about.html">About</a>
-        <a href="awards.html">Categories</a>
+        <a class="is-current" href="awards.html">Categories</a>
         <a href="event.html">Event</a>
-        <a class="is-current" href="winners.html">Past Winners</a>
+        <a href="winners.html">Past Winners</a>
         <a href="index.html#timeline">Timeline</a>
       </nav>
       <a class="header-cta" href="index.html#enter">Entry Updates</a>
@@ -52,42 +52,71 @@
       <a href="index.html#enter">Entry Updates</a>
     </div>
 
-    <main id="main">
-      <section class="page-hero">
-        <p class="eyebrow reveal">Archive</p>
-        <h1 class="reveal">Past winners and honorees.</h1>
-        <p class="page-hero__intro reveal">
-          A formal record from The Academy of AI Music, the first organization leading recognition
-          for AI music excellence and honoring the works, artists, and creative
-          teams moving the field into public culture.
+    <main id="main" data-award-page>
+      <section class="page-hero award-hero">
+        <p class="eyebrow reveal" data-award-group>The AIMEE's</p>
+        <h1 class="reveal" data-award-title>Loading award category.</h1>
+        <p class="page-hero__intro reveal" data-award-intro>
+          This reusable page will display the selected award category, nominees,
+          judging focus, and related categories.
         </p>
+        <div class="award-meta reveal">
+          <span data-award-number>Category</span>
+          <span data-award-range>Directory</span>
+          <span>Inaugural Season</span>
+        </div>
       </section>
 
-      <section class="winner-archive section-pad">
-        <article class="archive-row reveal">
-          <span>2024</span>
+      <section class="award-detail section-pad">
+        <aside class="award-detail__sidebar reveal">
+          <a class="text-link" href="awards.html">Back to all categories</a>
           <div>
-            <p>AI-Assisted Song of the Year</p>
-            <h2>The Beatles - Now and Then</h2>
+            <span>Template</span>
+            <p>One Academy-led structure powers every AIMEE category.</p>
           </div>
-          <p>Recognized for the careful use of machine-learning audio separation to complete the final Beatles song.</p>
-        </article>
-        <article class="archive-row reveal">
-          <span>2024</span>
           <div>
-            <p>Voice and Legacy Award</p>
-            <h2>Randy Travis - Authorized AI Voice Project</h2>
+            <span>Status</span>
+            <p data-award-status>Nominees to be announced.</p>
           </div>
-          <p>Honored for artist-approved AI voice technology that helped restore one of country music's defining voices.</p>
-        </article>
-        <article class="archive-row reveal">
-          <span>2025</span>
-          <div>
-            <p>Breakthrough AI Music Project</p>
-            <h2>Xania Monet - Commercial Breakthrough</h2>
-          </div>
-          <p>Recognized for expanding mainstream awareness of AI music through a virtual R&B project.</p>
-        </article>
+        </aside>
+
+        <div class="award-detail__content">
+          <section class="award-panel reveal">
+            <p class="eyebrow">2025 Nominees</p>
+            <h2>Nominee slate.</h2>
+            <ol class="nominee-list" data-award-nominees>
+              <li>Nominees will appear here when the Academy finalizes the slate.</li>
+            </ol>
+          </section>
+
+          <section class="award-panel reveal">
+            <p class="eyebrow">Judging Focus</p>
+            <h2>The Academy standard.</h2>
+            <div class="criteria-grid">
+              <article>
+                <span>01</span>
+                <h3>Creative excellence</h3>
+                <p>Musical quality, direction, taste, and the strength of the finished work.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>Category leadership</h3>
+                <p>How the work advances the Academy's standard for AI-assisted or AI-generated music.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Transparency</h3>
+                <p>Clear authorship, responsible workflows, and appropriate permissions where needed.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="award-panel reveal">
+            <p class="eyebrow">Related Categories</p>
+            <h2>Explore nearby awards.</h2>
+            <div class="related-awards" data-related-awards></div>
+          </section>
+        </div>
       </section>
     </main>
 

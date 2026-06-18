@@ -5,45 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="The AIMEs celebrate the artists, technologists, and boundary-pushers defining the future of AI music."
+      content="The Academy of AI Music is the first organization dedicated to recognizing excellence in AI-generated and AI-assisted music through the AIMEE's."
     />
-    <title>The AIMEs — AI Music Awards</title>
+    <title>Academy of AI Music | The AIMEE's</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
-  <body>
+  <body class="home-page">
     <div class="site-loader" aria-hidden="true">
-      <div class="site-loader__mark wordmark-lockup">
-        <span class="wordmark__name"><span class="wordmark__accent">AI</span>ME</span>
+      <div class="wordmark">
+        <span class="wordmark__name"><span>AI</span>MEE</span>
         <span class="wordmark__award" aria-label="Awards">
           <span>A</span><span>W</span><span>A</span><span>R</span><span>D</span><span>S</span>
         </span>
       </div>
-      <div class="site-loader__line"><span></span></div>
     </div>
 
-    <div class="noise" aria-hidden="true"></div>
-    <div class="cursor-glow" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div class="top-strip">
+      <a href="event.html">Inaugural AIMEE event details</a>
+    </div>
 
     <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="The AIMEs home">
-        <span class="wordmark__name"><span class="wordmark__accent">AI</span>ME</span>
+      <a class="wordmark" href="index.html" aria-label="AIMEE Awards home">
+        <span class="wordmark__name"><span>AI</span>MEE</span>
         <span class="wordmark__award" aria-label="Awards">
           <span>A</span><span>W</span><span>A</span><span>R</span><span>D</span><span>S</span>
         </span>
       </a>
+
       <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#categories">Categories</a>
+        <a href="about.html">About</a>
+        <a href="awards.html">Categories</a>
+        <a href="event.html">Event</a>
         <a href="winners.html">Past Winners</a>
         <a href="#timeline">Timeline</a>
       </nav>
-      <a class="header-cta" href="#enter">Submit your work <span>↗</span></a>
+
+      <a class="header-cta" href="#enter">Entry Updates</a>
+
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span>
         <span class="sr-only">Toggle menu</span>
@@ -51,274 +57,200 @@
     </header>
 
     <div class="mobile-menu" id="mobile-menu">
-      <a href="#about">About</a>
-      <a href="#categories">Categories</a>
+      <a href="about.html">About</a>
+      <a href="awards.html">Categories</a>
+      <a href="event.html">Event</a>
       <a href="winners.html">Past Winners</a>
       <a href="#timeline">Timeline</a>
-      <a href="#enter">Submit your work</a>
+      <a href="#enter">Entry Updates</a>
     </div>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero__eyebrow reveal">
-          <span class="status-dot"></span>
-          The inaugural AI Music Awards
-        </div>
-
-        <div class="hero__title" aria-label="The future has a new sound">
-          <div class="title-row title-row--one">
-            <span>The</span>
-            <span class="hero__aside">Music is changing.<br />The stage is ready.</span>
-          </div>
-          <div class="title-row title-row--two">
-            <span>future has</span>
-          </div>
-          <div class="title-row title-row--three">
-            <span>a new</span>
-            <span class="sound-word">sound<i>.</i></span>
-          </div>
-        </div>
-
-        <div class="hero__footer reveal">
+    <main id="main">
+      <section class="front-hero">
+        <article class="front-hero__feature reveal">
+          <p class="eyebrow">The Academy of AI Music</p>
+          <h1>The leading institution for AI music excellence.</h1>
           <p>
-            Celebrating the artists, technologists, and boundary-pushers
-            defining a new era of music.
+            The AIMEE's are the first awards created to recognize excellence in
+            AI-generated and AI-assisted music, led by The Academy of AI Music defining the
+            standard for this new creative field.
           </p>
-          <a class="circle-link" href="#about" aria-label="Explore the AIMEs">
-            <svg viewBox="0 0 48 48" aria-hidden="true">
-              <path d="M24 10v25M15 27l9 9 9-9" />
-            </svg>
+          <a class="button" href="about.html">Learn About the Awards</a>
+        </article>
+
+        <aside class="front-hero__rail" aria-label="Featured updates">
+          <a class="feature-card reveal" href="#enter">
+            <span>Entries</span>
+            <strong>Be part of the first official AIMEE season</strong>
           </a>
-          <div class="hero__date">
-            <span>San Diego</span>
-            <strong>Spring 2027</strong>
-          </div>
-        </div>
+          <a class="feature-card reveal" href="winners.html">
+            <span>Archive</span>
+            <strong>Establishing the public record for AI music excellence</strong>
+          </a>
+          <a class="feature-card reveal" href="event.html">
+            <span>Ceremony</span>
+            <strong>Inaugural event details and ceremony updates</strong>
+          </a>
+        </aside>
+      </section>
 
-        <div class="hero-signal" aria-hidden="true">
-          <div class="hero-equalizer">
-            <span style="--level: .28; --delay: -0.2s; --color: #6b4215"></span>
-            <span style="--level: .37; --delay: -1.65s; --speed: .92s; --color: #7a4a17"></span>
-            <span style="--level: .22; --delay: -0.72s; --speed: 1.48s; --color: #89551b"></span>
-            <span style="--level: .48; --delay: -2.1s; --speed: .78s; --color: #98611f"></span>
-            <span style="--level: .34; --delay: -1.4s; --speed: 1.24s; --color: #a66d24"></span>
-            <span style="--level: .58; --delay: -0.6s; --speed: .86s; --color: #b57a2b"></span>
-            <span style="--level: .47; --delay: -1.8s; --speed: 1.62s; --color: #c38732"></span>
-            <span style="--level: .72; --delay: -0.3s; --speed: .7s; --color: #d1953b"></span>
-            <span style="--level: .52; --delay: -1.1s; --speed: 1.34s; --color: #dfa348"></span>
-            <span style="--level: .81; --delay: -1.7s; --speed: .98s; --color: #edb458"></span>
-            <span style="--level: .64; --delay: -0.8s; --speed: 1.76s; --color: #f6c66a"></span>
-            <span style="--level: .95; --delay: -1.3s; --speed: .74s; --color: #ffd77d"></span>
-            <span style="--level: .7; --delay: -0.4s; --speed: 1.18s; --color: #f4c05e"></span>
-            <span style="--level: .88; --delay: -1.9s; --speed: .88s; --color: #e8a93f"></span>
-            <span style="--level: .42; --delay: -0.22s; --speed: 1.52s; --color: #d38d2f"></span>
-            <span style="--level: .56; --delay: -1.0s; --speed: .82s; --color: #bf7426"></span>
-            <span style="--level: 1; --delay: -0.5s; --speed: 1.06s; --color: #a95e20"></span>
-            <span style="--level: .73; --delay: -1.6s; --speed: .68s; --color: #94501d"></span>
-            <span style="--level: .92; --delay: -0.7s; --speed: 1.44s; --color: #7c4219"></span>
-            <span style="--level: .51; --delay: -2.3s; --speed: .94s; --color: #6b3717"></span>
-            <span style="--level: .62; --delay: -1.5s; --speed: 1.7s; --color: #7d461a"></span>
-            <span style="--level: .84; --delay: -0.1s; --speed: .76s; --color: #91581f"></span>
-            <span style="--level: .49; --delay: -1.2s; --speed: 1.32s; --color: #a86d27"></span>
-            <span style="--level: .78; --delay: -0.75s; --speed: .9s; --color: #be8434"></span>
-            <span style="--level: .36; --delay: -2.05s; --speed: 1.58s; --color: #d29b45"></span>
-            <span style="--level: .57; --delay: -1.85s; --speed: .72s; --color: #e4b05a"></span>
-            <span style="--level: .93; --delay: -0.35s; --speed: 1.16s; --color: #f1c674"></span>
-            <span style="--level: .76; --delay: -1.45s; --speed: .84s; --color: #f8d994"></span>
-            <span style="--level: .98; --delay: -0.95s; --speed: 1.4s; --color: #eec675"></span>
-            <span style="--level: .87; --delay: -1.75s; --speed: .66s; --color: #dfad54"></span>
-            <span style="--level: .8; --delay: -0.55s; --speed: 1.28s; --color: #c99238"></span>
-            <span style="--level: .91; --delay: -1.25s; --speed: .96s; --color: #b2772c"></span>
-            <span style="--level: .66; --delay: -0.15s; --speed: 1.64s; --color: #955c22"></span>
-            <span style="--level: .53; --delay: -1.55s; --speed: .8s; --color: #79451b"></span>
-            <span style="--level: .69; --delay: -2.15s; --speed: 1.12s; --color: #623617"></span>
-            <span style="--level: .38; --delay: -0.85s; --speed: 1.5s; --color: #7f4e1d"></span>
-            <span style="--level: .28; --delay: -1.35s; --speed: .74s; --color: #a76824"></span>
-            <span style="--level: .18; --delay: -0.45s; --speed: 1.36s; --color: #d39434"></span>
-          </div>
+      <section class="news-grid section-pad" id="news">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Latest</p>
+          <h2>From the Academy desk.</h2>
+        </div>
+        <div class="card-grid">
+          <article class="editorial-card reveal">
+            <span>Announcement</span>
+            <h3>The Academy of AI Music establishes the global stage for AI music creators.</h3>
+            <p>Created to lead the recognition of excellence, innovation, authorship, and cultural impact.</p>
+          </article>
+          <article class="editorial-card reveal">
+            <span>Music + Technology</span>
+            <h3>AI-generated music moves from experiment to an excellence standard.</h3>
+            <p>The Academy evaluates finished work, creative direction, and the human decisions behind the tool.</p>
+          </article>
+          <article class="editorial-card reveal">
+            <span>Event</span>
+            <h3>The inaugural ceremony introduces the leading institution for AI music.</h3>
+            <p>A formal industry evening for creators, platforms, partners, and fans shaping the future of music.</p>
+          </article>
         </div>
       </section>
 
-      <section class="manifesto section-pad" id="about">
-        <div class="section-label reveal">
-          <span>01</span>
-          <span>Our mission</span>
+      <section class="awards-index section-pad" id="awards">
+        <div class="section-heading reveal">
+          <p class="eyebrow">The AIMEE's / Industry</p>
+          <h2>The first comprehensive awards system for AI music excellence.</h2>
         </div>
-        <div class="manifesto__content">
-          <p class="manifesto__lead split-reveal">
-            We believe a new creative movement deserves its own stage.
-          </p>
-          <div class="manifesto__body reveal">
-            <p>
-              The AIMEs honor exceptional music made with artificial intelligence:
-              not the technology alone, but the imagination, intention, and human
-              voice behind it.
-            </p>
-            <a class="text-link" href="#enter">Discover our mission <span>↗</span></a>
-          </div>
-        </div>
-      </section>
-
-      <section class="feature section-pad">
-        <div class="feature__visual reveal">
-          <div class="sculpture" aria-hidden="true">
-            <div class="sculpture__halo"></div>
-            <div class="sculpture__ring sculpture__ring--one"></div>
-            <div class="sculpture__ring sculpture__ring--two"></div>
-            <div class="sculpture__stem"></div>
-            <div class="sculpture__base"></div>
-          </div>
-          <span class="visual-note visual-note--one">Signal / 01</span>
-          <span class="visual-note visual-note--two">Human + machine</span>
-        </div>
-        <div class="feature__copy">
-          <div class="section-label reveal">
-            <span>One night</span>
-            <span>Infinite possibility</span>
-          </div>
-          <h2 class="split-reveal">More than an awards show.</h2>
-          <p class="reveal">
-            A global meeting point for creators, musicians, filmmakers,
-            researchers, and fans shaping the culture around AI music.
-          </p>
-          <div class="feature__stats reveal">
-            <div><strong>24</strong><span>Award categories</span></div>
-            <div><strong>01</strong><span>Unforgettable night</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="categories section-pad" id="categories">
-        <div class="categories__heading">
-          <div class="section-label reveal">
+        <div class="index-list">
+          <a class="index-row reveal" href="awards.html#technical">
+            <span>01</span>
+            <strong>Technical Achievement</strong>
+            <p>Score, vocal performance, sound design, orchestration, restoration, and audio technology.</p>
+          </a>
+          <a class="index-row reveal" href="awards.html#genre">
             <span>02</span>
-            <span>The awards</span>
-          </div>
-          <h2 class="split-reveal">Recognizing the full spectrum of AI music.</h2>
+            <strong>Genre Excellence</strong>
+            <p>Classical, jazz, pop, hip-hop, rock, country, R&amp;B, Latin, K-pop, Afrobeats, and more.</p>
+          </a>
+          <a class="index-row reveal" href="awards.html#collaboration">
+            <span>03</span>
+            <strong>Collaboration</strong>
+            <p>Human-AI composition, live performance, legacy artist projects, orchestras, DJs, and film scoring.</p>
+          </a>
+          <a class="index-row reveal" href="awards.html#innovation">
+            <span>04</span>
+            <strong>Innovation</strong>
+            <p>Real-time generation, adaptive systems, emotionally resonant tracks, wellness, gaming, and new models.</p>
+          </a>
+          <a class="index-row reveal" href="awards.html#lyrics">
+            <span>05</span>
+            <strong>Lyrics &amp; Vocals</strong>
+            <p>AI-written lyrics, vocal synthesis, authorized voice cloning, harmonization, translation, and choir work.</p>
+          </a>
+          <a class="index-row reveal" href="awards.html#production">
+            <span>06</span>
+            <strong>Production &amp; Engineering</strong>
+            <p>Beatmaking, plugins, mastering engines, sample generation, chord tools, effects, and full production suites.</p>
+          </a>
+          <a class="index-row reveal" href="awards.html#visual">
+            <span>07</span>
+            <strong>Visual &amp; Multimedia</strong>
+            <p>Music video, album artwork, live visuals, AR/VR, avatars, lyric videos, and interactive installations.</p>
+          </a>
+          <a class="index-row reveal" href="awards.html#impact">
+            <span>08</span>
+            <strong>Cultural &amp; Social Impact</strong>
+            <p>Education, accessibility, preservation, mental health, heritage, environmental awareness, and democratized creation.</p>
+          </a>
+          <a class="index-row reveal" href="awards.html#business">
+            <span>09</span>
+            <strong>Business &amp; Industry</strong>
+            <p>Licensing, distribution, royalty tracking, analytics, A&amp;R, personalization, rights, and marketing.</p>
+          </a>
+          <a class="index-row reveal" href="awards.html#honorary">
+            <span>10</span>
+            <strong>Lifetime &amp; Honorary</strong>
+            <p>Pioneer, visionary, advocate, label, and lifetime achievement recognition for AI music innovation.</p>
+          </a>
         </div>
-
-        <div class="category-list">
-          <article class="category-row reveal">
-            <span class="category-row__number">01</span>
-            <h3>Song of the Year</h3>
-            <p>The defining AI-assisted track of the year.</p>
-            <span class="category-row__arrow">↗</span>
-          </article>
-          <article class="category-row reveal">
-            <span class="category-row__number">02</span>
-            <h3>Artist of the Year</h3>
-            <p>A singular creative vision across sound and technology.</p>
-            <span class="category-row__arrow">↗</span>
-          </article>
-          <article class="category-row reveal">
-            <span class="category-row__number">03</span>
-            <h3>Best Visual World</h3>
-            <p>Music and moving image brought together in a new form.</p>
-            <span class="category-row__arrow">↗</span>
-          </article>
-          <article class="category-row reveal">
-            <span class="category-row__number">04</span>
-            <h3>Breakthrough Creator</h3>
-            <p>A bold new voice arriving at exactly the right moment.</p>
-            <span class="category-row__arrow">↗</span>
-          </article>
-          <article class="category-row reveal">
-            <span class="category-row__number">05</span>
-            <h3>Innovation Award</h3>
-            <p>A technical leap that expands what music can become.</p>
-            <span class="category-row__arrow">↗</span>
-          </article>
+        <div class="section-action reveal">
+          <a class="button" href="awards.html">View All 100 Categories</a>
         </div>
-        <a class="button button--outline reveal" href="#enter">View all 24 categories <span>↗</span></a>
       </section>
 
-      <section class="quote-panel">
-        <div class="quote-panel__glow" aria-hidden="true"></div>
-        <p class="quote-panel__kicker reveal">A new creative language</p>
-        <blockquote class="split-reveal">
-          “The future of music won't be made by machines. It will be made by
-          people who know how to dream with them.”
-        </blockquote>
-        <div class="waveform reveal" aria-hidden="true">
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
+      <section class="institution-panel">
+        <div class="institution-panel__copy reveal">
+          <p class="eyebrow">Mission</p>
+          <h2>The Academy exists to lead this new era of music.</h2>
+          <p>
+            As the first organization dedicated to AI music excellence, The
+            Academy sets a clear standard for direction, taste, transparency,
+            musicality, and final creative decisions.
+          </p>
         </div>
       </section>
 
       <section class="timeline section-pad" id="timeline">
-        <div class="section-label reveal">
-          <span>03</span>
-          <span>The road to the AIMEs</span>
+        <div class="section-heading reveal">
+          <p class="eyebrow">Timeline</p>
+          <h2>Road to the inaugural ceremony.</h2>
         </div>
-        <h2 class="split-reveal">Your work.<br />The world's stage.</h2>
-        <div class="timeline__grid">
-          <article class="timeline-card reveal">
-            <span class="timeline-card__date">Aug 2026</span>
-            <span class="timeline-card__dot"></span>
+        <div class="timeline-list">
+          <article class="timeline-item reveal">
+            <span>Aug 2026</span>
             <h3>Entries open</h3>
-            <p>Creators worldwide submit work across 24 categories.</p>
+            <p>Creators submit eligible work to the inaugural AIMEE awards slate.</p>
           </article>
-          <article class="timeline-card reveal">
-            <span class="timeline-card__date">Nov 2026</span>
-            <span class="timeline-card__dot"></span>
+          <article class="timeline-item reveal">
+            <span>Nov 2026</span>
             <h3>Judging begins</h3>
-            <p>Artists and industry leaders select the year's standouts.</p>
+            <p>Reviewers and advisors evaluate submissions against the Academy's excellence standard.</p>
           </article>
-          <article class="timeline-card reveal">
-            <span class="timeline-card__date">Jan 2027</span>
-            <span class="timeline-card__dot"></span>
-            <h3>Nominees revealed</h3>
-            <p>The first class of AIME nominees takes the spotlight.</p>
+          <article class="timeline-item reveal">
+            <span>Jan 2027</span>
+            <h3>Nominees announced</h3>
+            <p>The first AIMEE nominees establish the public benchmark for AI music excellence.</p>
           </article>
-          <article class="timeline-card reveal">
-            <span class="timeline-card__date">Spring 2027</span>
-            <span class="timeline-card__dot"></span>
-            <h3>AIME night</h3>
-            <p>A landmark celebration, live from San Diego.</p>
+          <article class="timeline-item reveal">
+            <span>Spring 2027</span>
+            <h3>AIMEE night</h3>
+            <p>The inaugural ceremony presents the leading honors in AI music.</p>
           </article>
         </div>
       </section>
 
-      <section class="enter" id="enter">
-        <div class="enter__orb" aria-hidden="true"></div>
-        <div class="enter__content">
-          <p class="reveal">The first AIMEs are coming.</p>
-          <h2 class="split-reveal">Make history.<br />Enter the signal.</h2>
-          <div class="enter__actions reveal">
-            <a class="button button--light" href="mailto:entries@aimeawards.com">
-              Get entry updates <span>↗</span>
-            </a>
-            <a class="text-link text-link--light" href="mailto:hello@aimeawards.com">
-              Become a partner <span>↗</span>
-            </a>
-          </div>
+      <section class="enter-panel" id="enter">
+        <p class="eyebrow reveal">Entry Updates</p>
+        <h2 class="reveal">Stay close to the inaugural AIMEE season.</h2>
+        <div class="enter-panel__actions reveal">
+          <a class="button button--light" href="mailto:entries@academyofaimusic.com">Email Entries</a>
+          <a class="text-link text-link--light" href="mailto:hello@academyofaimusic.com">Partnership Inquiries</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <a class="wordmark wordmark--footer" href="#top">
-        <span class="wordmark__name"><span class="wordmark__accent">AI</span>ME</span>
+      <a class="wordmark wordmark--footer" href="index.html" aria-label="AIMEE Awards home">
+        <span class="wordmark__name"><span>AI</span>MEE</span>
         <span class="wordmark__award" aria-label="Awards">
           <span>A</span><span>W</span><span>A</span><span>R</span><span>D</span><span>S</span>
         </span>
       </a>
       <div class="site-footer__links">
-        <a href="#about">About</a>
-        <a href="#categories">Categories</a>
+        <a href="about.html">About</a>
+        <a href="awards.html">Categories</a>
+        <a href="event.html">Event</a>
         <a href="winners.html">Past Winners</a>
         <a href="#enter">Contact</a>
-        <a href="#enter">Instagram</a>
       </div>
       <div class="site-footer__meta">
-        <span>© 2026 AIME Awards</span>
-        <span>Built for the next sound</span>
+        <span>© 2026 Academy of AI Music</span>
+        <span>Inaugural AIMEE Season</span>
       </div>
     </footer>
 
-    <script src="assets/site.js?v=wave-interactive"></script>
+    <script src="assets/site.js?v=award-template"></script>
   </body>
 </html>
