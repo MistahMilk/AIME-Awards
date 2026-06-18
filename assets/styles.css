@@ -45,8 +45,18 @@ body.menu-open {
 #academy-overview,
 #academy-work,
 #leadership,
-#non-profit,
-#programs {
+#foundation,
+#programs,
+#award-overview,
+#award-principles,
+#award-process,
+#award-eligibility,
+#award-history,
+#membership-overview,
+#membership-benefits,
+#membership-levels,
+#membership-eligibility,
+#membership-apply {
   scroll-margin-top: 7rem;
 }
 
@@ -186,9 +196,9 @@ button {
 .desktop-nav {
   display: flex;
   justify-content: center;
-  gap: clamp(1rem, 2.6vw, 2.75rem);
+  gap: clamp(0.8rem, 1.65vw, 1.8rem);
   color: rgba(247, 244, 237, 0.78);
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 800;
 }
 
@@ -295,6 +305,31 @@ button {
 .menu-toggle,
 .mobile-menu {
   display: none;
+}
+
+.academy-brand {
+  display: inline-flex;
+  justify-self: end;
+  align-items: center;
+  gap: 0.7rem;
+  color: rgba(247, 244, 237, 0.8);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.academy-brand:hover {
+  color: var(--gold-light);
+  transform: translateY(-1px);
+}
+
+.academy-brand img {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.academy-brand span {
+  font: 700 0.56rem / 1.25 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .section-pad {
@@ -1283,6 +1318,120 @@ p {
   align-items: center;
 }
 
+.gallery-directory {
+  background: #fffdf7;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  width: min(100%, var(--max));
+  margin: 0 auto;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.gallery-card {
+  display: grid;
+  grid-template-rows: minmax(18rem, 1fr) auto;
+  min-width: 0;
+  background: var(--paper);
+}
+
+.gallery-card--wide {
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 1.5fr) minmax(18rem, 0.5fr);
+  grid-template-rows: none;
+}
+
+.gallery-card__visual {
+  position: relative;
+  min-height: 22rem;
+  overflow: hidden;
+  background:
+    linear-gradient(115deg, transparent 46%, rgba(242, 211, 139, 0.7) 46% 48%, transparent 48%),
+    radial-gradient(circle at 68% 45%, rgba(201, 154, 66, 0.65), transparent 24%),
+    linear-gradient(135deg, #080808, #21180b);
+}
+
+.gallery-card__visual::before,
+.gallery-card__visual::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(242, 211, 139, 0.35);
+  border-radius: 50%;
+}
+
+.gallery-card__visual::before {
+  width: 16rem;
+  height: 16rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery-card__visual::after {
+  width: 10rem;
+  height: 10rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery-card__visual--portrait {
+  background:
+    linear-gradient(90deg, transparent 48%, rgba(247, 244, 237, 0.16) 48% 52%, transparent 52%),
+    radial-gradient(ellipse at 50% 35%, rgba(242, 211, 139, 0.55), transparent 16%),
+    linear-gradient(155deg, #050505, #2c2111);
+}
+
+.gallery-card__visual--gold {
+  background:
+    repeating-linear-gradient(90deg, transparent 0 0.8rem, rgba(5, 5, 5, 0.18) 0.8rem 1rem),
+    linear-gradient(145deg, #e2b75e, #74501d);
+}
+
+.gallery-card__visual--lines {
+  background:
+    repeating-linear-gradient(115deg, transparent 0 1.5rem, rgba(242, 211, 139, 0.3) 1.5rem 1.6rem),
+    radial-gradient(circle at 34% 70%, rgba(201, 154, 66, 0.52), transparent 24%),
+    #080808;
+}
+
+.gallery-card__visual--archive {
+  background:
+    linear-gradient(rgba(5, 5, 5, 0.72), rgba(5, 5, 5, 0.72)),
+    repeating-linear-gradient(0deg, #c99a42 0 1px, transparent 1px 2.5rem),
+    repeating-linear-gradient(90deg, #c99a42 0 1px, transparent 1px 2.5rem),
+    #15110a;
+}
+
+.gallery-card__visual span {
+  position: absolute;
+  z-index: 1;
+  top: 1.5rem;
+  left: 1.5rem;
+  color: var(--gold-light);
+  font: 700 0.72rem / 1 var(--font-mono);
+  letter-spacing: 0.1em;
+}
+
+.gallery-card__copy {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  background: #fffdf7;
+}
+
+.gallery-card__copy h2 {
+  margin: 0 0 0.75rem;
+  font-size: var(--card-title);
+  line-height: 1;
+}
+
+.gallery-card__copy p:last-child {
+  margin-bottom: 0;
+}
+
 .archive-row {
   display: grid;
   grid-template-columns: 5rem minmax(18rem, 0.8fr) minmax(0, 1fr);
@@ -1363,6 +1512,10 @@ p {
     display: none;
   }
 
+  .academy-brand {
+    display: none;
+  }
+
   .menu-toggle {
     display: flex;
     justify-self: end;
@@ -1399,9 +1552,10 @@ p {
     inset: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
-    padding: var(--side);
+    padding: 9rem var(--side) 3rem;
+    overflow-y: auto;
     background: var(--black);
     color: var(--paper);
     transform: translateY(-105%);
@@ -1413,7 +1567,7 @@ p {
   }
 
   .mobile-menu a {
-    font: 700 clamp(2.25rem, 9vw, 4rem) / 0.95 var(--font-display);
+    font: 700 clamp(1.85rem, 7.5vw, 3.5rem) / 0.95 var(--font-display);
     letter-spacing: -0.06em;
   }
 
@@ -1424,6 +1578,7 @@ p {
 
   .mobile-menu__submenu {
     display: flex;
+    flex-wrap: wrap;
     gap: 1.25rem;
     padding-left: 0.15rem;
   }
@@ -1446,8 +1601,13 @@ p {
   }
 
   .about-hero,
-  .nonprofit-panel {
+  .nonprofit-panel,
+  .gallery-card--wide {
     grid-template-columns: 1fr;
+  }
+
+  .gallery-card--wide {
+    grid-template-rows: minmax(18rem, 1fr) auto;
   }
 
   .about-hero {
@@ -1469,6 +1629,14 @@ p {
 
   .about-card-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card--wide {
+    grid-column: auto;
   }
 
   .governance-grid {
@@ -1707,6 +1875,10 @@ p {
   .about-contact__links {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .gallery-card__visual {
+    min-height: 17rem;
   }
 
   .archive-row {

@@ -61,7 +61,10 @@ const getAwardsFromDocument = (sourceDocument) => {
 
     group.querySelectorAll(".category-list li").forEach((item, index) => {
       const title = item.textContent.trim();
-      const number = item.value || Number(item.parentElement.getAttribute("start") || 1) + index;
+      const number =
+        item.dataset.categoryNumber ||
+        item.value ||
+        Number(item.parentElement.getAttribute("start") || 1) + index;
 
       awards.push({
         title,

@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Explore the first comprehensive AIMEE Awards category directory from the Academy of AI Music."
+      content="Explore The AIMEE Award Categories from the Academy of AI Music."
     />
-    <title>Award Categories | The AIMEE's</title>
+    <title>The AIMEE Award Categories | Academy of AI Music</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,13 +33,20 @@
           <a href="about.html">About</a>
           <div class="nav-submenu">
             <a href="about.html#academy">The Academy</a>
-            <a href="about.html#non-profit">Non-Profit</a>
+            <a href="aimee-award.html">The AIMEE Award</a>
+            <a href="about.html#foundation">The Foundation</a>
           </div>
         </div>
         <a class="is-current" href="awards.html">Categories</a>
         <a href="event.html">Event</a>
+        <a href="membership.html">Membership</a>
+        <a href="gallery.html">Gallery</a>
         <a href="winners.html">2025 Winners</a>
       </nav>
+      <a class="academy-brand" href="about.html#academy" aria-label="The Academy of AI Music">
+        <img src="assets/academy-emblem.svg" alt="" />
+        <span>The Academy<br />of AI Music</span>
+      </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span>
         <span class="sr-only">Toggle menu</span>
@@ -48,31 +55,35 @@
 
     <div class="mobile-menu" id="mobile-menu">
       <div class="mobile-menu__group">
-        <a href="about.html">About</a>
-        <div class="mobile-menu__submenu">
-          <a href="about.html#academy">The Academy</a>
-          <a href="about.html#non-profit">Non-Profit</a>
+          <a href="about.html">About</a>
+          <div class="mobile-menu__submenu">
+            <a href="about.html#academy">The Academy</a>
+            <a href="aimee-award.html">The AIMEE Award</a>
+            <a href="about.html#foundation">The Foundation</a>
         </div>
       </div>
       <a href="awards.html">Categories</a>
       <a href="event.html">Event</a>
+      <a href="membership.html">Membership</a>
+      <a href="gallery.html">Gallery</a>
       <a href="winners.html">2025 Winners</a>
       <a href="index.html#enter">Entry Updates</a>
     </div>
 
     <main id="main">
       <section class="page-hero">
-        <p class="eyebrow reveal">The First AIMEE Category System</p>
+        <p class="eyebrow reveal">The AIMEE Award Categories</p>
         <h1 class="reveal">The leading framework for AI music excellence.</h1>
         <p class="page-hero__intro reveal">
-          The Academy of AI Music created the first comprehensive awards directory
-          for AI music, spanning craft, genre, collaboration, innovation, voice,
-          production, multimedia, impact, business, and lifetime achievement.
+          The Academy of AI Music created the first National &amp; International comprehensive awards directory
+          for AI music, spanning the General Field, craft, genre, collaboration,
+          innovation, voice, production, multimedia, impact, business, and lifetime achievement.
         </p>
       </section>
 
       <section class="category-directory section-pad">
         <div class="category-jump reveal" aria-label="Award category groups">
+          <a href="#general">Top General</a>
           <a href="#technical">Technical</a>
           <a href="#genre">Genre</a>
           <a href="#collaboration">Collaboration</a>
@@ -84,6 +95,21 @@
           <a href="#business">Business</a>
           <a href="#honorary">Honorary</a>
         </div>
+
+        <section class="category-group reveal" id="general">
+          <div class="category-group__heading">
+            <span>00</span>
+            <h2>Top General</h2>
+            <p>5 awards / General Field</p>
+          </div>
+          <ol class="category-list category-list--general">
+            <li data-category-number="G1">AI Song of the Year</li>
+            <li data-category-number="G2">AI Record of the Year</li>
+            <li data-category-number="G3">AI Album of the Year</li>
+            <li data-category-number="G4">AI Artist of the Year</li>
+            <li data-category-number="G5">Best New AI Music Artist</li>
+          </ol>
+        </section>
 
         <section class="category-group reveal" id="technical">
           <div class="category-group__heading">
@@ -288,7 +314,7 @@
 
       <section class="enter-panel" id="enter">
         <p class="eyebrow reveal">Entry Updates</p>
-        <h2 class="reveal">Prepare for the inaugural AIMEE season.</h2>
+        <h2 class="reveal">Prepare for the 2026 AIMEE Award season.</h2>
         <div class="enter-panel__actions reveal">
           <a class="button button--light" href="mailto:entries@academyofaimusic.com">Email Entries</a>
           <a class="text-link text-link--light" href="mailto:hello@academyofaimusic.com">Partnership Inquiries</a>
@@ -304,6 +330,8 @@
       </a>
       <div class="site-footer__links">
         <a href="about.html">About</a>
+        <a href="membership.html">Membership</a>
+        <a href="gallery.html">Gallery</a>
         <a href="awards.html">Categories</a>
         <a href="event.html">Event</a>
         <a href="winners.html">2025 Winners</a>
@@ -311,10 +339,10 @@
       </div>
       <div class="site-footer__meta">
         <span>© 2026 Academy of AI Music</span>
-        <span>Inaugural AIMEE Season</span>
+        <span>2026 AIMEE Season</span>
       </div>
     </footer>
 
-    <script src="assets/site.js?v=award-template"></script>
+    <script src="assets/site.js?v=general-field"></script>
   </body>
 </html>
